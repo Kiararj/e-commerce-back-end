@@ -1,52 +1,68 @@
 # eCommerce-Back-End
 
-## Description
-
-This project is the backend for an ecommerce website. Express was used to create routes for the project, Sequelize is used to handle the database, and Node.js is used as a backend environment. 
-
 ## Table of Contents 
 
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 - [Badges](#badges)
+- [How to Contribute](#how-to-contribute)
+
+## Description
+
+Welcome to the world of internet retail, where e-commerce drives the electronics industry forward. This powerful phenomenon enables seamless online transactions for businesses and consumers, transforming the way we buy and sell electronic products. In 2021, the United States alone witnessed a staggering $2.54 trillion in e-commerce revenue, according to the United Nations Conference on Trade and Development. Leading platforms like Shopify and WooCommerce offer a range of services catering to businesses of all sizes. For developers, grasping the fundamental architecture of these platforms is crucial. In this challenge, I dove into the backend realm of e-commerce, configuring a working Express.js API to interact with a MySQL database using Sequelize. 
 
 ## Installation
 
-The user should install the Insomnia program, and run npm install in the Terminal once the repository is cloned.
+1. Clone the repository to you local IDE.
+
+2. Install the [Insomnia](https://insomnia.rest/download) program.
+
+3. Create a .env file and enter the following text:
+
+```
+DB_NAME='ecommerce_db'
+DB_PW='{ your mysql password }'
+DB_USER='root'
+```
+
+4. Create a .gitignore file and add the following text to hide your personal information:
+
+```
+.env
+node_modules
+```
+
+5. Run ```npm install``` in your local IDE to install the required dependencies.
+
+6. Run ```mysql -u root -p ``` and enter your mysql password to start mysql.
+
+7. Run ```source db/schema.sql;``` to set up the schema for your database.
+
+8. Run ```npm run seed``` to seed the data in your seeds folders.
+
+9. Run ```node server.js``` to start the server.
 
 ## Usage
 
-![alt text](assets/images/screenshot.png)
+Open the Insomnia program and navigate to the GET routes for categories, products, and tags by entering the following URLs:
 
-## License
+http://localhost:3001/api/categories
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+http://localhost:3001/api/products
 
----
+http://localhost:3001/api/tags
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+Below is an example of the /products GET route.
+
+![Screenshot](assets/screenshot-one.png)
+
+Check out a walkthrough video here: https://drive.google.com/file/d/1FxyX6BAz5DJR-f7t4x1jXN_ZWEXA9rhB/view?usp=sharing
 
 ## Badges
 
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-
-![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
-
-## Features
-
-If your project has a lot of features, list them here.
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Please contact me via my [Github](https://github.com/Kiararj) if you would like to contribute. 
